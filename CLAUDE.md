@@ -50,3 +50,6 @@ There's no linter or formatter configured. `out/` (research JSON output) is git-
 - Pricing messaging must stay explicit: "Apply now, pay later. No payment is collected on this page."
 - Tone is plain and confident, with no hype and no emojis. Keep the page accessible and keep the OG meta tags.
 - Don't `git push`.
+
+## Keyword tool
+- `keyword-tool.html` / `assets/keyword-tool.js`: pure functions are exposed as `window.JLPKeywords` and via `module.exports` for `node tests/test_keyword_tool.mjs`. Keep it network-free and dependency-free.

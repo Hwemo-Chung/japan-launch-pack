@@ -99,3 +99,7 @@ The tests don't use the network.
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+## Free keyword tool
+
+`keyword-tool.html` + `assets/keyword-tool.js` run entirely in the browser (no network calls): split on commas / Japanese commas / spaces / new lines, NFKC-normalize, dedupe, optionally drop words already in the iOS title/subtitle, join with commas and no spaces, count code points against iOS (title 30, subtitle 30, keywords 100) and Google Play (title 30, short description 80) limits, and "Fit to 100" by dropping keywords from the end. Tests: `node tests/test_keyword_tool.mjs`.

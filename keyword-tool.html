@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Japanese keyword field tool for the App Store and Google Play | Japan Launch Pack</title>
+  <meta name="description" content="Free in-browser tool: clean up a Japanese App Store keyword field (dedupe, comma format, no spaces) and check iOS and Google Play character limits.">
+  <meta name="theme-color" content="#b42318">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Free Japanese keyword field tool | Japan Launch Pack">
+  <meta property="og:description" content="Dedupe, comma-format and length-check Japanese store metadata in your browser.">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Free Japanese keyword field tool | Japan Launch Pack">
+  <meta name="twitter:description" content="Dedupe, comma-format and length-check Japanese store metadata in your browser.">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/keyword-tool.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Japan Launch Pack</a>
+      <nav aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html#deliverables">What you get</a></li>
+          <li><a href="case-study-picbatch.html">Sample analysis</a></li>
+          <li><a href="keyword-tool.html" aria-current="page">Keyword tool</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a class="btn btn-small" href="index.html#apply">Apply</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero hero-compact" aria-labelledby="kt-title">
+      <div class="container narrow">
+        <p class="eyebrow">Free tool &middot; runs in your browser</p>
+        <h1 id="kt-title">Japanese keyword field tool</h1>
+        <p class="lead">Paste keywords separated by commas, Japanese commas, spaces or new lines. The tool removes duplicates, joins them with commas and no spaces, and counts characters against the App Store and Google Play limits. Nothing you type leaves your browser.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="kt-keywords">
+      <div class="container narrow kt">
+        <h2 id="kt-keywords">iOS keyword field (100 characters)</h2>
+        <label for="kw-input">Your keywords, in priority order (most important first)</label>
+        <textarea id="kw-input" rows="5" placeholder="例: 画像, リサイズ、一括 圧縮&#10;形式変換">画像, リサイズ、一括 圧縮
+形式変換, 写真, リサイズ, 容量, 保存先</textarea>
+        <div class="kt-options">
+          <label><input type="checkbox" id="opt-nfkc" checked> Normalize full-width letters and numbers (NFKC)</label>
+          <label><input type="checkbox" id="opt-title" checked> Remove words already in the iOS title or subtitle</label>
+        </div>
+        <label for="kw-output">Result</label>
+        <textarea id="kw-output" rows="3" readonly></textarea>
+        <p class="kt-counter" id="kw-count" aria-live="polite"></p>
+        <p class="small" id="kw-notes" aria-live="polite"></p>
+        <div class="cta-row">
+          <button type="button" class="btn" id="btn-fit">Fit to 100</button>
+          <button type="button" class="btn btn-ghost" id="btn-copy">Copy result</button>
+          <span class="small" id="copy-msg" aria-live="polite"></span>
+        </div>
+        <p class="small" id="kw-dropped" aria-live="polite"></p>
+        <p class="small">"Fit to 100" drops keywords from the end of your list until the result fits, so put the most important ones first.</p>
+
+        <h2 class="subhead">Other fields</h2>
+        <div class="kt-grid">
+          <div><label for="ios-title">iOS app name (30)</label><input type="text" id="ios-title" value="PicBatch: 画像一括リサイズ"><p class="kt-counter" id="ios-title-count"></p></div>
+          <div><label for="ios-subtitle">iOS subtitle (30)</label><input type="text" id="ios-subtitle" value=""><p class="kt-counter" id="ios-subtitle-count"></p></div>
+          <div><label for="play-title">Google Play title (30)</label><input type="text" id="play-title" value=""><p class="kt-counter" id="play-title-count"></p></div>
+          <div><label for="play-short">Google Play short description (80)</label><input type="text" id="play-short" value=""><p class="kt-counter" id="play-short-count"></p></div>
+        </div>
+        <p class="small">Characters are counted as Unicode code points, so one kanji, kana or emoji counts as one. The stores' own counters are the final word.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="kt-why">
+      <div class="container narrow">
+        <h2 id="kt-why">Why Japanese keyword fields are different</h2>
+        <ul class="plain-list">
+          <li><strong>No spaces between words.</strong> Japanese is written without spaces, so you choose where one keyword ends and the next begins. Separate them with commas only; a space after a comma wastes a character.</li>
+          <li><strong>Don't repeat title words.</strong> On the App Store, words in the app name and subtitle are already indexed, so repeating them in the keyword field uses up space for nothing.</li>
+          <li><strong>Translation is not keyword research.</strong> A literal translation of your English keywords often misses the words Japanese users actually type. Look at what the top local apps in your category use.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-cta" aria-labelledby="kt-cta">
+      <div class="container narrow center">
+        <h2 id="kt-cta">Want this done for you?</h2>
+        <p>Japan Launch Pack covers keyword research against the top Japanese apps in your category, plus every metadata field and screenshot captions. <a href="case-study-picbatch.html">See a sample analysis</a>.</p>
+        <a class="btn" href="index.html#apply">Apply for a founding slot</a>
+        <p class="small">Apply now, pay later. No payment is collected on this page.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Japan Launch Pack</strong> &middot; Japanese store listings by a Tokyo-based app engineer. <a href="index.html">Home</a> &middot; <a href="case-study-picbatch.html">Sample analysis</a> &middot; <a href="keyword-tool.html">Keyword tool</a></p>
+      <p>Contact: via the <a href="index.html#apply">application form</a> only.</p>
+      <p>This site uses no cookies, analytics or trackers.</p>
+      <p>App Store is a service mark of Apple Inc. Google Play is a trademark of Google LLC. This service is not affiliated with either. App names in the tables belong to their developers.</p>
+    </div>
+  </footer>
+</body>
+</html>

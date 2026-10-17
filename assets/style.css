@@ -260,3 +260,11 @@ details p { margin-bottom: 1rem; }
   .nav-list { gap: 0.8rem; }
   .nav-list li:not(:last-child) { display: none; }
 }
+
+/* Keyword tool */
+.kt label { display: block; font-weight: 600; margin: 1rem 0 0.35rem; }
+.kt textarea, .kt input[type="text"] { width: 100%; box-sizing: border-box; font: inherit; padding: 0.6rem 0.7rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); color: var(--text); }
+.kt-options label { font-weight: 400; margin: 0.4rem 0; }
+.kt-counter { font-family: var(--mono); font-size: 0.95rem; color: var(--ok); margin: 0.35rem 0 0; }
+.kt-counter.over { color: var(--error); font-weight: 700; }
+.kt-grid { display: grid; gap: 0 1.5rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }

@@ -1,18 +1,8 @@
-// Form backend configuration. See README.md ("Switching the form provider").
+// Application form configuration. See README.md ("Application form").
 //
-// provider:
-//   "none"        - form is shown but submit is disabled ("Applications open in a few days").
-//   "google_form" - answers are POSTed to a Google Form (formResponse endpoint).
+// formUrl: public Google Form URL (.../viewform). app.js copies it into the
+// "Open the application form" link. Keep the href in index.html in sync so the
+// link also works without JavaScript.
 window.JLP_CONFIG = {
-  provider: "none",            // "none" | "google_form"
-  googleFormAction: "",        // e.g. https://docs.google.com/forms/d/e/<ID>/formResponse
-  googleFormFields: {
-    name: "entry.X",
-    email: "entry.X",
-    urls: "entry.X",
-    platform: "entry.X",
-    budget: "entry.X",
-    timeline: "entry.X",
-    notes: "entry.X"
-  }
+  formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSftcUkIlofMP_NtJVKl1Jk8DL24kp_YEDQALZfLrQZwAL8MDA/viewform"
 };

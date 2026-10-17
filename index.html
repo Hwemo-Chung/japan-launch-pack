@@ -212,7 +212,7 @@
         <ol class="steps">
           <li>
             <h3>Apply</h3>
-            <p>Fill in the short form below with your app's store link(s) and a few details.</p>
+            <p>Fill in the short application form linked below with your app's store link(s) and a few details.</p>
           </li>
           <li>
             <h3>Fit review and email reply</h3>
@@ -233,86 +233,21 @@
         <p>Tell me about your app. Applying takes a few minutes and doesn't commit you to anything. I review every application myself and reply by email.</p>
         <p class="notice"><strong>Apply now, pay later.</strong> No payment is collected on this page.</p>
 
-        <p id="form-closed" class="form-closed" hidden>Applications open in a few days. The form is shown so you can see what will be asked.</p>
+        <h3 class="apply-list-title">The form asks for</h3>
+        <ul class="apply-list">
+          <li>Name</li>
+          <li>Email</li>
+          <li>App Store and/or Google Play URL(s)</li>
+          <li>Platform (iOS, Android or both)</li>
+          <li>Budget</li>
+          <li>Timeline</li>
+          <li>Notes</li>
+        </ul>
 
-        <form id="apply-form" class="apply-form" novalidate>
-          <div class="field">
-            <label for="f-name">Name <span class="optional">(optional)</span></label>
-            <input id="f-name" name="name" type="text" autocomplete="name" maxlength="200">
-          </div>
-
-          <div class="field">
-            <label for="f-email">Email <span class="req" aria-hidden="true">*</span></label>
-            <input id="f-email" name="email" type="email" autocomplete="email" required maxlength="254" aria-describedby="f-email-err">
-            <p class="error" id="f-email-err" aria-live="polite"></p>
-          </div>
-
-          <div class="field">
-            <label for="f-urls">App Store and/or Google Play URL(s) <span class="req" aria-hidden="true">*</span></label>
-            <textarea id="f-urls" name="urls" rows="3" required maxlength="2000" aria-describedby="f-urls-hint f-urls-err"></textarea>
-            <p class="hint" id="f-urls-hint">One per line. If your app isn't live yet, write "not live" and describe it in the notes.</p>
-            <p class="error" id="f-urls-err" aria-live="polite"></p>
-          </div>
-
-          <fieldset class="field">
-            <legend>Platform</legend>
-            <div class="radio-row">
-              <label><input type="radio" name="platform" value="iOS"> iOS</label>
-              <label><input type="radio" name="platform" value="Android"> Android</label>
-              <label><input type="radio" name="platform" value="Both" checked> Both</label>
-            </div>
-          </fieldset>
-
-          <div class="field-row">
-            <div class="field">
-              <label for="f-budget">Budget</label>
-              <select id="f-budget" name="budget">
-                <option value="$49 founding">$49 founding</option>
-                <option value="$99">$99 (one store)</option>
-                <option value="$149">$149 (both stores)</option>
-                <option value="Not sure" selected>Not sure</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="f-timeline">Timeline</label>
-              <select id="f-timeline" name="timeline">
-                <option value="ASAP">ASAP</option>
-                <option value="Within 1 month">Within 1 month</option>
-                <option value="1–3 months">1–3 months</option>
-                <option value="Just exploring" selected>Just exploring</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="field">
-            <label for="f-notes">Notes <span class="optional">(optional)</span></label>
-            <textarea id="f-notes" name="notes" rows="4" maxlength="4000" aria-describedby="f-notes-hint"></textarea>
-            <p class="hint" id="f-notes-hint">Anything useful: your category, target users, current markets, questions.</p>
-          </div>
-
-          <!-- Honeypot: humans never see or fill this. -->
-          <div class="hp" aria-hidden="true">
-            <label for="f-website">Website</label>
-            <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
-          </div>
-
-          <div class="field">
-            <label class="check">
-              <input id="f-consent" name="consent" type="checkbox" required aria-describedby="f-consent-err">
-              <span>I agree that the information I submit is used only to evaluate my application and reply to me. <span class="req" aria-hidden="true">*</span></span>
-            </label>
-            <p class="error" id="f-consent-err" aria-live="polite"></p>
-          </div>
-
-          <button type="submit" class="btn" id="f-submit">Apply for a founding slot</button>
-          <p class="small">Apply now, pay later. If your app is a fit, you'll get an email with scope and quote before anything is charged.</p>
-          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
-        </form>
-
-        <div id="form-success" class="form-success" tabindex="-1" hidden>
-          <h3>Thanks, your application was sent.</h3>
-          <p>I'll review it and reply by email. Nothing is charged unless you confirm a quote.</p>
-        </div>
+        <p class="apply-cta">
+          <a class="btn btn-large" id="apply-link" href="https://docs.google.com/forms/d/e/1FAIpQLSftcUkIlofMP_NtJVKl1Jk8DL24kp_YEDQALZfLrQZwAL8MDA/viewform" target="_blank" rel="noopener noreferrer" aria-describedby="apply-link-note">Open the application form</a>
+        </p>
+        <p class="small" id="apply-link-note">Opens a Google Form in a new tab. Apply now, pay later. No payment is collected.</p>
 
         <p class="small privacy"><strong>Privacy:</strong> The information you submit is used only to evaluate your application and reply to you. It is never shared or sold. To have your data deleted, say so through this form (or reply to any email from me) and it will be removed.</p>
       </div>

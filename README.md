@@ -15,42 +15,16 @@ python3 -m http.server 8000
 
 To publish on GitHub Pages, enable Pages for the repository and serve from the root of the default branch. `.nojekyll` is included so files are served as-is.
 
-## Switching the form provider
+## Application form
 
-The apply form posts to whatever backend `assets/config.js` selects.
+Applications go through an external Google Form. The `#apply` section lists what the form asks (name, email, app store URL(s), platform, budget, timeline, notes) and has an "Open the application form" button that opens the form in a new tab (`target="_blank" rel="noopener noreferrer"`). Every other Apply link on the page (nav, hero, final CTA) points to `#apply`, so visitors see the privacy note before they leave the site.
 
-### `provider: "none"` (default)
+The form URL lives in two places:
 
-The form is visible but the submit button is disabled, and the page says "Applications open in a few days". Nothing is sent anywhere.
+- `index.html`: the `href` of `#apply-link`. This is the real URL, so the button works without JavaScript.
+- `assets/config.js`: `window.JLP_CONFIG.formUrl`. `assets/app.js` copies it into the button's `href` on load. Anything that isn't an `https://docs.google.com/forms/...` URL is ignored and the HTML `href` is kept.
 
-### `provider: "google_form"`
-
-Answers are POSTed to a Google Form with `fetch(..., { mode: "no-cors" })` as `application/x-www-form-urlencoded`, and an inline success message is shown.
-
-1. Create a Google Form with short-answer or paragraph questions for: name, email, app URLs, platform, budget, timeline, notes. Plain text questions are the simplest. If you use multiple-choice questions, their options must match the form values exactly (`iOS`, `Android`, `Both`; `$49 founding`, `$99`, `$149`, `Not sure`; `ASAP`, `Within 1 month`, `1–3 months`, `Just exploring`).
-2. Find the entry IDs: open the form, choose the three-dot menu, then **Get pre-filled link**, fill every field with a dummy value and copy the link. Each field appears as `entry.123456789=...`.
-3. Take the form's public URL (`https://docs.google.com/forms/d/e/<ID>/viewform`) and replace `viewform` with `formResponse`.
-4. Edit `assets/config.js`:
-
-```js
-window.JLP_CONFIG = {
-  provider: "google_form",
-  googleFormAction: "https://docs.google.com/forms/d/e/<ID>/formResponse",
-  googleFormFields: {
-    name: "entry.111111111",
-    email: "entry.222222222",
-    urls: "entry.333333333",
-    platform: "entry.444444444",
-    budget: "entry.555555555",
-    timeline: "entry.666666666",
-    notes: "entry.777777777"
-  }
-};
-```
-
-If the action URL or the `email`/`urls` entry IDs are missing or still placeholders (`entry.X`), the page falls back to the "none" behaviour, so a half-finished config never accepts applications that go nowhere. With `no-cors` the browser can't read Google's response, so after setting this up, send a test application and confirm it shows up in the form's responses.
-
-Spam protection is a hidden honeypot field (`website`). If it is filled in, the page shows success and sends nothing.
+To change the form, update both to the new public `.../viewform` URL. Validation, spam protection and storing responses are handled by Google Forms.
 
 ## Competitor script
 

@@ -28,11 +28,9 @@ There's no linter or formatter configured. `out/` (research JSON output) is git-
 ## Architecture notes
 
 ### Landing page / form
-- `assets/config.js` sets `window.JLP_CONFIG`, which picks the form backend: `provider: "none"` (default) or `"google_form"`.
-- `assets/app.js` (an IIFE in ES5 style using `var` and `function`; keep it that way) calls `isGoogleFormReady()`. If the action URL doesn't match `https://docs.google.com/forms/.../formResponse`, or the `email`/`urls` entries aren't real `entry.<digits>` IDs, it **falls back to "none" behaviour**: the form stays visible, submit is disabled, and the button reads "Applications open in a few days". This guard is intentional. A half-finished config must never accept applications that go nowhere.
-- Google Form submission uses `fetch(..., {mode: "no-cors"})` with a urlencoded body. The response is opaque, so success means only that the request left the browser.
-- The honeypot field is `website`. If it's filled in, the page shows success and sends nothing.
-- Form option values (`iOS`/`Android`/`Both`, `$49 founding`/`$99`/`$149`/`Not sure`, `ASAP`/`Within 1 month`/`1–3 months`/`Just exploring`) are documented in README because Google Form multiple-choice options must match them exactly. Update the README if you change them.
+- Applications go through an external Google Form. The `#apply` section has no embedded form, only an intro, the list of what the form asks, the privacy note, and an "Open the application form" button (`#apply-link`, `target="_blank" rel="noopener noreferrer"`).
+- All other Apply CTAs (nav, hero, final CTA, footer contact) link to `#apply` in-page on purpose, so visitors read the privacy note before leaving the site. Don't point them straight at the Google Form.
+- The form URL is in two places that must stay in sync: the `href` of `#apply-link` in `index.html` (so it works without JS) and `formUrl` in `assets/config.js` (`window.JLP_CONFIG`). `assets/app.js` (an IIFE in ES5 style using `var` and `function`; keep it that way) copies `formUrl` into the href only if it matches `https://docs.google.com/forms/`.
 - The illustrative sample table in `index.html` gets its counts from `updateSampleCounts()` in `app.js`. It reads `[data-count-text]` cells and `.count[data-limit]` badges, so you only edit the text and the badges recompute. `charCount` uses `Array.from(text).length` to match Python's `len()`.
 
 ### `jp_competitors.py`

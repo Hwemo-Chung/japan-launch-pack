@@ -1,0 +1,304 @@
+{
+  "source": "google_play",
+  "query": {
+    "term": "画像 一括 リサイズ"
+  },
+  "count": 11,
+  "apps": [
+    {
+      "rank": 1,
+      "id": "com.simplemobilephotoresizer",
+      "name": "写真リサイズ",
+      "developer": "Farluner Apps & Games",
+      "rating": 4.4,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "写真",
+      "genre_id": null,
+      "title_length": 6,
+      "url": "https://play.google.com/store/apps/details?id=com.simplemobilephotoresizer&hl=ja&gl=JP"
+    },
+    {
+      "rank": 2,
+      "id": "com.fookiemonsters.photoresizer",
+      "name": "写真リサイズ - 画像サイズ変更・縮小",
+      "developer": "Ryoichi Fukugawa",
+      "rating": 4.56,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "写真",
+      "genre_id": null,
+      "title_length": 19,
+      "url": "https://play.google.com/store/apps/details?id=com.fookiemonsters.photoresizer&hl=ja&gl=JP"
+    },
+    {
+      "rank": 3,
+      "id": "de.vsmedia.imagesize",
+      "name": "画像サイズ - 写真リサイズ アプリ",
+      "developer": "Codenia",
+      "rating": 4.28,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "写真",
+      "genre_id": null,
+      "title_length": 18,
+      "url": "https://play.google.com/store/apps/details?id=de.vsmedia.imagesize&hl=ja&gl=JP"
+    },
+    {
+      "rank": 4,
+      "id": "com.jpeg.image.compressor",
+      "name": "JPEG Image Compressor & Resize",
+      "developer": "DictionaryAndTranslator",
+      "rating": 4.35,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "写真",
+      "genre_id": null,
+      "title_length": 30,
+      "url": "https://play.google.com/store/apps/details?id=com.jpeg.image.compressor&hl=ja&gl=JP"
+    },
+    {
+      "rank": 5,
+      "id": "com.photocompress.photoeditor",
+      "name": "写真を圧縮する: 写真のサイズを変更する & 写真の切り抜き",
+      "developer": "Wang YuFen",
+      "rating": 4.65,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "ツール",
+      "genre_id": null,
+      "title_length": 30,
+      "url": "https://play.google.com/store/apps/details?id=com.photocompress.photoeditor&hl=ja&gl=JP"
+    },
+    {
+      "rank": 6,
+      "id": "com.zmobileapps.photoresizer",
+      "name": "Photo Resizer：画像をトリミング、サイズ変更、共",
+      "developer": "photoshop mobile apps",
+      "rating": 4.31,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "写真",
+      "genre_id": null,
+      "title_length": 30,
+      "url": "https://play.google.com/store/apps/details?id=com.zmobileapps.photoresizer&hl=ja&gl=JP"
+    },
+    {
+      "rank": 7,
+      "id": "com.appsuite.photo.compressor.reduce.size",
+      "name": "画像圧縮 | 写真サイズ変更 | 画像サイズ変更",
+      "developer": "Battery Stats Saver",
+      "rating": 4.09,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "ツール",
+      "genre_id": null,
+      "title_length": 24,
+      "url": "https://play.google.com/store/apps/details?id=com.appsuite.photo.compressor.reduce.size&hl=ja&gl=JP"
+    },
+    {
+      "rank": 8,
+      "id": "com.xnview.XnResize",
+      "name": "Resize Me!: 写真圧縮",
+      "developer": "XnView",
+      "rating": 4.41,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "写真",
+      "genre_id": null,
+      "title_length": 16,
+      "url": "https://play.google.com/store/apps/details?id=com.xnview.XnResize&hl=ja&gl=JP"
+    },
+    {
+      "rank": 9,
+      "id": "com.github.xiaofeidev.compressimage",
+      "name": "画像圧縮・写真リサイズ・一括変換",
+      "developer": "xiaofeidev",
+      "rating": null,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "ツール",
+      "genre_id": null,
+      "title_length": 16,
+      "url": "https://play.google.com/store/apps/details?id=com.github.xiaofeidev.compressimage&hl=ja&gl=JP"
+    },
+    {
+      "rank": 10,
+      "id": "com.compressphotopuma",
+      "name": "Puma（ピューマ）：写真 圧縮・リサイズ・変換",
+      "developer": "Farluner Apps & Games",
+      "rating": 4.45,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "写真",
+      "genre_id": null,
+      "title_length": 24,
+      "url": "https://play.google.com/store/apps/details?id=com.compressphotopuma&hl=ja&gl=JP"
+    },
+    {
+      "rank": 11,
+      "id": "com.bharatdev.imagesizereducer",
+      "name": "Photo Compressor: Image Resize",
+      "developer": "Bharat Dev",
+      "rating": null,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "ツール",
+      "genre_id": null,
+      "title_length": 30,
+      "url": "https://play.google.com/store/apps/details?id=com.bharatdev.imagesizereducer&hl=ja&gl=JP"
+    }
+  ],
+  "keywords": [
+    {
+      "keyword": "写真",
+      "count": 173,
+      "apps": 9
+    },
+    {
+      "keyword": "サイズ",
+      "count": 122,
+      "apps": 9
+    },
+    {
+      "keyword": "画像",
+      "count": 113,
+      "apps": 9
+    },
+    {
+      "keyword": "変更",
+      "count": 57,
+      "apps": 8
+    },
+    {
+      "keyword": "jpeg",
+      "count": 32,
+      "apps": 8
+    },
+    {
+      "keyword": "縮小",
+      "count": 28,
+      "apps": 8
+    },
+    {
+      "keyword": "kb",
+      "count": 25,
+      "apps": 8
+    },
+    {
+      "keyword": "保存",
+      "count": 20,
+      "apps": 8
+    },
+    {
+      "keyword": "png",
+      "count": 19,
+      "apps": 8
+    },
+    {
+      "keyword": "トリミング",
+      "count": 17,
+      "apps": 8
+    },
+    {
+      "keyword": "圧縮",
+      "count": 64,
+      "apps": 7
+    },
+    {
+      "keyword": "リサイズ",
+      "count": 35,
+      "apps": 7
+    },
+    {
+      "keyword": "jpg",
+      "count": 19,
+      "apps": 7
+    },
+    {
+      "keyword": "調整",
+      "count": 18,
+      "apps": 7
+    },
+    {
+      "keyword": "共有",
+      "count": 17,
+      "apps": 7
+    },
+    {
+      "keyword": "指定",
+      "count": 17,
+      "apps": 7
+    },
+    {
+      "keyword": "形式",
+      "count": 15,
+      "apps": 7
+    },
+    {
+      "keyword": "複数",
+      "count": 10,
+      "apps": 7
+    },
+    {
+      "keyword": "解像度",
+      "count": 22,
+      "apps": 6
+    },
+    {
+      "keyword": "簡単",
+      "count": 20,
+      "apps": 6
+    },
+    {
+      "keyword": "メール",
+      "count": 19,
+      "apps": 6
+    },
+    {
+      "keyword": "mb",
+      "count": 15,
+      "apps": 6
+    },
+    {
+      "keyword": "webp",
+      "count": 13,
+      "apps": 6
+    },
+    {
+      "keyword": "制限",
+      "count": 13,
+      "apps": 6
+    },
+    {
+      "keyword": "ファイル",
+      "count": 11,
+      "apps": 6
+    },
+    {
+      "keyword": "ピクセル",
+      "count": 9,
+      "apps": 6
+    },
+    {
+      "keyword": "アスペクト",
+      "count": 6,
+      "apps": 6
+    },
+    {
+      "keyword": "変換",
+      "count": 24,
+      "apps": 5
+    },
+    {
+      "keyword": "品質",
+      "count": 17,
+      "apps": 5
+    },
+    {
+      "keyword": "添付",
+      "count": 14,
+      "apps": 5
+    }
+  ]
+}

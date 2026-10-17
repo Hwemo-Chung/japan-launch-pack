@@ -179,6 +179,24 @@ p { margin: 0 0 1em; }
 .count.over { color: var(--error); }
 .sample-note { color: var(--muted); font-size: 0.95rem; margin: 1rem 0 0; }
 
+/* Case study */
+.hero-compact { padding: 3.5rem 0 2.5rem; }
+.hero-compact h1 { font-size: clamp(1.7rem, 3.5vw, 2.4rem); }
+.subhead { margin-top: 2rem; }
+.table-scroll { overflow-x: auto; margin: 1rem 0; }
+.data-table td, .data-table th { font-size: 0.95rem; }
+.data-table tbody th { font-weight: 600; }
+.gloss { color: var(--muted); font-size: 0.95rem; }
+.draft-pair {
+  display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.25rem; margin: 1rem 0;
+}
+.draft-ja { white-space: pre-line; font-size: 1.05rem; }
+.draft-pair .gloss p:last-child { margin-bottom: 0; }
+.ios-compare { margin-top: 2rem; }
+.ios-compare .table-scroll { margin-top: 0; }
+
 /* Pricing */
 .price-card { text-align: center; }
 .price { font-size: 2.4rem; font-weight: 700; margin: 0.2rem 0 0.4rem; }

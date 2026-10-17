@@ -1,0 +1,31 @@
+{
+  "platform": "ios",
+  "fields": [
+    {
+      "field": "title",
+      "text": "PicBatch - 写真・画像を一括リサイズ",
+      "length": 23,
+      "limit": 30,
+      "remaining": 7,
+      "ok": true
+    },
+    {
+      "field": "subtitle",
+      "text": "まとめてサイズ変更・形式変換で容量節約",
+      "length": 19,
+      "limit": 30,
+      "remaining": 11,
+      "ok": true
+    },
+    {
+      "field": "keywords",
+      "text": "圧縮,縮小,複数,保存先,画質,解像度,軽量化,メール,添付,SNS,アップロード,ストレージ,カメラロール,ピクセル,枚数,KB,MB,ファイル,一斉,小さく,空き",
+      "length": 83,
+      "limit": 100,
+      "remaining": 17,
+      "ok": true
+    }
+  ],
+  "warnings": [],
+  "ok": true
+}

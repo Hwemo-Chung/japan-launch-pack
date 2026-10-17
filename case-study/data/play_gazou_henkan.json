@@ -1,0 +1,356 @@
+{
+  "source": "google_play",
+  "query": {
+    "term": "画像 変換"
+  },
+  "count": 15,
+  "apps": [
+    {
+      "rank": 1,
+      "id": "com.handycloset.android.jpeg",
+      "name": "JPEG 変換 : png, gif 画像をjpegで保存",
+      "developer": "handyCloset Inc.",
+      "rating": 4.32,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "写真",
+      "genre_id": null,
+      "title_length": 29,
+      "url": "https://play.google.com/store/apps/details?id=com.handycloset.android.jpeg&hl=ja&gl=JP"
+    },
+    {
+      "rank": 2,
+      "id": "imagetopdf.pdfconverter.jpgtopdf.pdfeditor",
+      "name": "写真 PDF 変換 - 画像 PDF 変換、PDF 編集",
+      "developer": "Simple Design Ltd.",
+      "rating": 4.81,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "仕事効率化",
+      "genre_id": null,
+      "title_length": 28,
+      "url": "https://play.google.com/store/apps/details?id=imagetopdf.pdfconverter.jpgtopdf.pdfeditor&hl=ja&gl=JP"
+    },
+    {
+      "rank": 3,
+      "id": "com.psoffritti.convertimage",
+      "name": "画像変換 写真 JPG PNG PDF",
+      "developer": "Double Ape",
+      "rating": 4.55,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "ツール",
+      "genre_id": null,
+      "title_length": 19,
+      "url": "https://play.google.com/store/apps/details?id=com.psoffritti.convertimage&hl=ja&gl=JP"
+    },
+    {
+      "rank": 4,
+      "id": "com.psoffritti.jpgconverter",
+      "name": "画像をJPGに変換 JPEG HEIC PNG対応",
+      "developer": "Double Ape",
+      "rating": 4.48,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "ツール",
+      "genre_id": null,
+      "title_length": 25,
+      "url": "https://play.google.com/store/apps/details?id=com.psoffritti.jpgconverter&hl=ja&gl=JP"
+    },
+    {
+      "rank": 5,
+      "id": "com.alpaca.imageconverter",
+      "name": "画像一括変換アプリ",
+      "developer": "Alpaca Works",
+      "rating": 4.51,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "ツール",
+      "genre_id": null,
+      "title_length": 9,
+      "url": "https://play.google.com/store/apps/details?id=com.alpaca.imageconverter&hl=ja&gl=JP"
+    },
+    {
+      "rank": 6,
+      "id": "com.anqa.imageconverter",
+      "name": "画像変換アプリ: PNG JPEG 変換, JPG 変 換",
+      "developer": "NeuralNet Solutions",
+      "rating": 3.85,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "ツール",
+      "genre_id": null,
+      "title_length": 29,
+      "url": "https://play.google.com/store/apps/details?id=com.anqa.imageconverter&hl=ja&gl=JP"
+    },
+    {
+      "rank": 7,
+      "id": "com.freeconvert.image_converter",
+      "name": "Image Converter - PixConverter",
+      "developer": "TransMedia Inc",
+      "rating": 3.58,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "仕事効率化",
+      "genre_id": null,
+      "title_length": 30,
+      "url": "https://play.google.com/store/apps/details?id=com.freeconvert.image_converter&hl=ja&gl=JP"
+    },
+    {
+      "rank": 8,
+      "id": "com.image.converter.convert.pdf.jpg.png.jpeg",
+      "name": "画像変換 - JPEG変換, PNG JPEG 変換",
+      "developer": "EclixTech",
+      "rating": null,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "ツール",
+      "genre_id": null,
+      "title_length": 26,
+      "url": "https://play.google.com/store/apps/details?id=com.image.converter.convert.pdf.jpg.png.jpeg&hl=ja&gl=JP"
+    },
+    {
+      "rank": 9,
+      "id": "pdf.converter.imagetopdf.jpgtopdf",
+      "name": "画像から PDF へのコンバーター",
+      "developer": "Convenient & Easy Apps",
+      "rating": 4.72,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "仕事効率化",
+      "genre_id": null,
+      "title_length": 17,
+      "url": "https://play.google.com/store/apps/details?id=pdf.converter.imagetopdf.jpgtopdf&hl=ja&gl=JP"
+    },
+    {
+      "rank": 10,
+      "id": "com.adobe.psmobile",
+      "name": "Photoshop Express 写真補正&加工アプリ",
+      "developer": "Adobe",
+      "rating": 4.06,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "写真",
+      "genre_id": null,
+      "title_length": 28,
+      "url": "https://play.google.com/store/apps/details?id=com.adobe.psmobile&hl=ja&gl=JP"
+    },
+    {
+      "rank": 11,
+      "id": "com.csdeveloper.imgconverter",
+      "name": "Image Converter - PNG/JPG/JPEG",
+      "developer": "csDeveloper",
+      "rating": 4.16,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "ツール",
+      "genre_id": null,
+      "title_length": 30,
+      "url": "https://play.google.com/store/apps/details?id=com.csdeveloper.imgconverter&hl=ja&gl=JP"
+    },
+    {
+      "rank": 12,
+      "id": "com.adobe.spark.post",
+      "name": "Adobe Express：AIで写真・動画編集",
+      "developer": "Adobe",
+      "rating": 4.37,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "アート＆デザイン",
+      "genre_id": null,
+      "title_length": 24,
+      "url": "https://play.google.com/store/apps/details?id=com.adobe.spark.post&hl=ja&gl=JP"
+    },
+    {
+      "rank": 13,
+      "id": "com.pdf.jpg.converter.convert.images",
+      "name": "PDF JPG 変換およびPNG",
+      "developer": "Wallet Passes Alliance",
+      "rating": 4.45,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "仕事効率化",
+      "genre_id": null,
+      "title_length": 16,
+      "url": "https://play.google.com/store/apps/details?id=com.pdf.jpg.converter.convert.images&hl=ja&gl=JP"
+    },
+    {
+      "rank": 14,
+      "id": "imagetopdf.pdfconverter.img2pdf.jpgtopdf.pdfmaker",
+      "name": "写真PDF変換 - 画像 PDF 変換、PDF スキャン",
+      "developer": "Battery Stats Saver",
+      "rating": 3.86,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "仕事効率化",
+      "genre_id": null,
+      "title_length": 28,
+      "url": "https://play.google.com/store/apps/details?id=imagetopdf.pdfconverter.img2pdf.jpgtopdf.pdfmaker&hl=ja&gl=JP"
+    },
+    {
+      "rank": 15,
+      "id": "com.cyberlink.photodirector",
+      "name": "PhotoDirector – AI搭載の写真加工＆画像編集",
+      "developer": "Cyberlink Corp",
+      "rating": 3.81,
+      "rating_count": null,
+      "price": "Free",
+      "genre": "写真",
+      "genre_id": null,
+      "title_length": 30,
+      "url": "https://play.google.com/store/apps/details?id=com.cyberlink.photodirector&hl=ja&gl=JP"
+    }
+  ],
+  "keywords": [
+    {
+      "keyword": "画像",
+      "count": 169,
+      "apps": 13
+    },
+    {
+      "keyword": "変換",
+      "count": 225,
+      "apps": 12
+    },
+    {
+      "keyword": "png",
+      "count": 60,
+      "apps": 12
+    },
+    {
+      "keyword": "写真",
+      "count": 106,
+      "apps": 11
+    },
+    {
+      "keyword": "共有",
+      "count": 30,
+      "apps": 11
+    },
+    {
+      "keyword": "pdf",
+      "count": 207,
+      "apps": 10
+    },
+    {
+      "keyword": "jpg",
+      "count": 79,
+      "apps": 10
+    },
+    {
+      "keyword": "ファイル",
+      "count": 47,
+      "apps": 9
+    },
+    {
+      "keyword": "jpeg",
+      "count": 41,
+      "apps": 9
+    },
+    {
+      "keyword": "変更",
+      "count": 21,
+      "apps": 9
+    },
+    {
+      "keyword": "gif",
+      "count": 18,
+      "apps": 9
+    },
+    {
+      "keyword": "保存",
+      "count": 16,
+      "apps": 9
+    },
+    {
+      "keyword": "簡単",
+      "count": 38,
+      "apps": 8
+    },
+    {
+      "keyword": "無料",
+      "count": 26,
+      "apps": 8
+    },
+    {
+      "keyword": "webp",
+      "count": 17,
+      "apps": 8
+    },
+    {
+      "keyword": "bmp",
+      "count": 14,
+      "apps": 8
+    },
+    {
+      "keyword": "使いやす",
+      "count": 11,
+      "apps": 8
+    },
+    {
+      "keyword": "今すぐ",
+      "count": 10,
+      "apps": 8
+    },
+    {
+      "keyword": "編集",
+      "count": 44,
+      "apps": 7
+    },
+    {
+      "keyword": "作成",
+      "count": 33,
+      "apps": 7
+    },
+    {
+      "keyword": "ツール",
+      "count": 26,
+      "apps": 7
+    },
+    {
+      "keyword": "形式",
+      "count": 23,
+      "apps": 7
+    },
+    {
+      "keyword": "画質",
+      "count": 11,
+      "apps": 7
+    },
+    {
+      "keyword": "ギャラリー",
+      "count": 9,
+      "apps": 7
+    },
+    {
+      "keyword": "調整",
+      "count": 9,
+      "apps": 7
+    },
+    {
+      "keyword": "メール",
+      "count": 8,
+      "apps": 7
+    },
+    {
+      "keyword": "サイズ",
+      "count": 18,
+      "apps": 6
+    },
+    {
+      "keyword": "追加",
+      "count": 18,
+      "apps": 6
+    },
+    {
+      "keyword": "サポート",
+      "count": 12,
+      "apps": 6
+    },
+    {
+      "keyword": "品質",
+      "count": 10,
+      "apps": 6
+    }
+  ]
+}

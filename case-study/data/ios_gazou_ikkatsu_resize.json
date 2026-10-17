@@ -1,0 +1,343 @@
+{
+  "source": "itunes",
+  "query": {
+    "term": "画像 一括 リサイズ"
+  },
+  "count": 14,
+  "apps": [
+    {
+      "rank": 1,
+      "id": 1023639407,
+      "name": "リサイズメール-複数の写真/画像をまとめて 一括変換",
+      "developer": "Sho Kurozumi",
+      "rating": 4.48,
+      "rating_count": 1937,
+      "price": "無料",
+      "genre": "Photo & Video",
+      "genre_id": 6008,
+      "title_length": 26,
+      "url": "https://apps.apple.com/jp/app/%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%BA%E3%83%A1%E3%83%BC%E3%83%AB-%E8%A4%87%E6%95%B0%E3%81%AE%E5%86%99%E7%9C%9F-%E7%94%BB%E5%83%8F%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6-%E4%B8%80%E6%8B%AC%E5%A4%89%E6%8F%9B/id1023639407?uo=4"
+    },
+    {
+      "rank": 2,
+      "id": 6800254343,
+      "name": "ResizeToS - 画像一括リサイズ",
+      "developer": "jinkyun kim",
+      "rating": 0,
+      "rating_count": 0,
+      "price": "無料",
+      "genre": "Productivity",
+      "genre_id": 6007,
+      "title_length": 20,
+      "url": "https://apps.apple.com/jp/app/resizetos-%E7%94%BB%E5%83%8F%E4%B8%80%E6%8B%AC%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%BA/id6800254343?uo=4"
+    },
+    {
+      "rank": 3,
+      "id": 1538830649,
+      "name": "かんたん写真圧縮 - 画像リサイズ・サイズ変更で容量削減",
+      "developer": "Osawa Shunsuke",
+      "rating": 4.45,
+      "rating_count": 3282,
+      "price": "無料",
+      "genre": "Photo & Video",
+      "genre_id": 6008,
+      "title_length": 28,
+      "url": "https://apps.apple.com/jp/app/%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93%E5%86%99%E7%9C%9F%E5%9C%A7%E7%B8%AE-%E7%94%BB%E5%83%8F%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%BA-%E3%82%B5%E3%82%A4%E3%82%BA%E5%A4%89%E6%9B%B4%E3%81%A7%E5%AE%B9%E9%87%8F%E5%89%8A%E6%B8%9B/id1538830649?uo=4"
+    },
+    {
+      "rank": 4,
+      "id": 1153379683,
+      "name": "画像圧縮・動画圧縮・写真圧縮で空き容量を増やすリサイズ圧縮",
+      "developer": "Saigen inc.",
+      "rating": 4.45,
+      "rating_count": 2998,
+      "price": "無料",
+      "genre": "Productivity",
+      "genre_id": 6007,
+      "title_length": 29,
+      "url": "https://apps.apple.com/jp/app/%E7%94%BB%E5%83%8F%E5%9C%A7%E7%B8%AE-%E5%8B%95%E7%94%BB%E5%9C%A7%E7%B8%AE-%E5%86%99%E7%9C%9F%E5%9C%A7%E7%B8%AE%E3%81%A7%E7%A9%BA%E3%81%8D%E5%AE%B9%E9%87%8F%E3%82%92%E5%A2%97%E3%82%84%E3%81%99%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%BA%E5%9C%A7%E7%B8%AE/id1153379683?uo=4"
+    },
+    {
+      "rank": 5,
+      "id": 6758528251,
+      "name": "画像変換：一括リサイズとPDF作成",
+      "developer": "Yanchen Zhao",
+      "rating": 4.75,
+      "rating_count": 4,
+      "price": "無料",
+      "genre": "Productivity",
+      "genre_id": 6007,
+      "title_length": 17,
+      "url": "https://apps.apple.com/jp/app/%E7%94%BB%E5%83%8F%E5%A4%89%E6%8F%9B-%E4%B8%80%E6%8B%AC%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%A8pdf%E4%BD%9C%E6%88%90/id6758528251?uo=4"
+    },
+    {
+      "rank": 6,
+      "id": 1065838233,
+      "name": "PicGizmo - リサイズ & HEICからJPG変換",
+      "developer": "REAFO CO., LTD.",
+      "rating": 4.23,
+      "rating_count": 444,
+      "price": "無料",
+      "genre": "Photo & Video",
+      "genre_id": 6008,
+      "title_length": 29,
+      "url": "https://apps.apple.com/jp/app/picgizmo-%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%BA-heic%E3%81%8B%E3%82%89jpg%E5%A4%89%E6%8F%9B/id1065838233?uo=4"
+    },
+    {
+      "rank": 7,
+      "id": 1536338554,
+      "name": "かんたん動画圧縮 - リサイズやファイル形式の変換",
+      "developer": "Osawa Shunsuke",
+      "rating": 4.66,
+      "rating_count": 15957,
+      "price": "無料",
+      "genre": "Photo & Video",
+      "genre_id": 6008,
+      "title_length": 25,
+      "url": "https://apps.apple.com/jp/app/%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93%E5%8B%95%E7%94%BB%E5%9C%A7%E7%B8%AE-%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%BA%E3%82%84%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%BD%A2%E5%BC%8F%E3%81%AE%E5%A4%89%E6%8F%9B/id1536338554?uo=4"
+    },
+    {
+      "rank": 8,
+      "id": 1106767919,
+      "name": "画像まとめてリサイズ〜カメラロールの画像を一括編集〜",
+      "developer": "Hiroyuki Kawate",
+      "rating": 3,
+      "rating_count": 6,
+      "price": "無料",
+      "genre": "Productivity",
+      "genre_id": 6007,
+      "title_length": 26,
+      "url": "https://apps.apple.com/jp/app/%E7%94%BB%E5%83%8F%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%BA-%E3%82%AB%E3%83%A1%E3%83%A9%E3%83%AD%E3%83%BC%E3%83%AB%E3%81%AE%E7%94%BB%E5%83%8F%E3%82%92%E4%B8%80%E6%8B%AC%E7%B7%A8%E9%9B%86/id1106767919?uo=4"
+    },
+    {
+      "rank": 9,
+      "id": 1500554025,
+      "name": "画像圧縮 - KB指定・写真サイズ変更",
+      "developer": "明娜 乔",
+      "rating": 4.54,
+      "rating_count": 63,
+      "price": "無料",
+      "genre": "Graphics & Design",
+      "genre_id": 6027,
+      "title_length": 19,
+      "url": "https://apps.apple.com/jp/app/%E7%94%BB%E5%83%8F%E5%9C%A7%E7%B8%AE-kb%E6%8C%87%E5%AE%9A-%E5%86%99%E7%9C%9F%E3%82%B5%E3%82%A4%E3%82%BA%E5%A4%89%E6%9B%B4/id1500554025?uo=4"
+    },
+    {
+      "rank": 10,
+      "id": 1601071395,
+      "name": "写真リサイズ - 画像圧縮・画像サイズ変更・容量削減アプリ",
+      "developer": "Yu Abe",
+      "rating": 4.6,
+      "rating_count": 758,
+      "price": "無料",
+      "genre": "Photo & Video",
+      "genre_id": 6008,
+      "title_length": 29,
+      "url": "https://apps.apple.com/jp/app/%E5%86%99%E7%9C%9F%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%BA-%E7%94%BB%E5%83%8F%E5%9C%A7%E7%B8%AE-%E7%94%BB%E5%83%8F%E3%82%B5%E3%82%A4%E3%82%BA%E5%A4%89%E6%9B%B4-%E5%AE%B9%E9%87%8F%E5%89%8A%E6%B8%9B%E3%82%A2%E3%83%97%E3%83%AA/id1601071395?uo=4"
+    },
+    {
+      "rank": 11,
+      "id": 6754588948,
+      "name": "画像サイズ – 一括リサイズ",
+      "developer": "ENDEVLAB",
+      "rating": 5,
+      "rating_count": 1,
+      "price": "無料",
+      "genre": "Photo & Video",
+      "genre_id": 6008,
+      "title_length": 14,
+      "url": "https://apps.apple.com/jp/app/%E7%94%BB%E5%83%8F%E3%82%B5%E3%82%A4%E3%82%BA-%E4%B8%80%E6%8B%AC%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%BA/id6754588948?uo=4"
+    },
+    {
+      "rank": 12,
+      "id": 6714450374,
+      "name": "写真リサイズ＆フォーマット変換 - 背景カスタマイズや縮小",
+      "developer": "Osawa Shunsuke",
+      "rating": 4.45,
+      "rating_count": 56,
+      "price": "無料",
+      "genre": "Graphics & Design",
+      "genre_id": 6027,
+      "title_length": 29,
+      "url": "https://apps.apple.com/jp/app/%E5%86%99%E7%9C%9F%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%BA-%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E5%A4%89%E6%8F%9B-%E8%83%8C%E6%99%AF%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA%E3%82%84%E7%B8%AE%E5%B0%8F/id6714450374?uo=4"
+    },
+    {
+      "rank": 13,
+      "id": 6755773326,
+      "name": "ImageTiny: 画像圧縮・一括変換・リサイズ",
+      "developer": "雷 陈",
+      "rating": 0,
+      "rating_count": 0,
+      "price": "無料",
+      "genre": "Photo & Video",
+      "genre_id": 6008,
+      "title_length": 25,
+      "url": "https://apps.apple.com/jp/app/imagetiny-%E7%94%BB%E5%83%8F%E5%9C%A7%E7%B8%AE-%E4%B8%80%E6%8B%AC%E5%A4%89%E6%8F%9B-%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%BA/id6755773326?uo=4"
+    },
+    {
+      "rank": 14,
+      "id": 6471817020,
+      "name": "写真圧縮:高性能ジップ、一括KBリサイズ、PDF/ZIP保存",
+      "developer": "Kunliang Wu",
+      "rating": 4,
+      "rating_count": 1,
+      "price": "無料",
+      "genre": "Productivity",
+      "genre_id": 6007,
+      "title_length": 30,
+      "url": "https://apps.apple.com/jp/app/%E5%86%99%E7%9C%9F%E5%9C%A7%E7%B8%AE-%E9%AB%98%E6%80%A7%E8%83%BD%E3%82%B8%E3%83%83%E3%83%97-%E4%B8%80%E6%8B%ACkb%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%BA-pdf-zip%E4%BF%9D%E5%AD%98/id6471817020?uo=4"
+    }
+  ],
+  "keywords": [
+    {
+      "keyword": "写真",
+      "count": 86,
+      "apps": 13
+    },
+    {
+      "keyword": "画像",
+      "count": 72,
+      "apps": 13
+    },
+    {
+      "keyword": "サイズ",
+      "count": 50,
+      "apps": 13
+    },
+    {
+      "keyword": "リサイズ",
+      "count": 37,
+      "apps": 13
+    },
+    {
+      "keyword": "保存",
+      "count": 30,
+      "apps": 11
+    },
+    {
+      "keyword": "一括",
+      "count": 28,
+      "apps": 11
+    },
+    {
+      "keyword": "圧縮",
+      "count": 88,
+      "apps": 10
+    },
+    {
+      "keyword": "容量",
+      "count": 36,
+      "apps": 10
+    },
+    {
+      "keyword": "png",
+      "count": 13,
+      "apps": 10
+    },
+    {
+      "keyword": "指定",
+      "count": 27,
+      "apps": 9
+    },
+    {
+      "keyword": "形式",
+      "count": 22,
+      "apps": 9
+    },
+    {
+      "keyword": "複数",
+      "count": 15,
+      "apps": 9
+    },
+    {
+      "keyword": "変更",
+      "count": 14,
+      "apps": 9
+    },
+    {
+      "keyword": "処理",
+      "count": 28,
+      "apps": 8
+    },
+    {
+      "keyword": "変換",
+      "count": 26,
+      "apps": 8
+    },
+    {
+      "keyword": "画質",
+      "count": 20,
+      "apps": 8
+    },
+    {
+      "keyword": "ファイルサイズ",
+      "count": 16,
+      "apps": 8
+    },
+    {
+      "keyword": "調整",
+      "count": 16,
+      "apps": 8
+    },
+    {
+      "keyword": "メール",
+      "count": 15,
+      "apps": 8
+    },
+    {
+      "keyword": "heic",
+      "count": 12,
+      "apps": 8
+    },
+    {
+      "keyword": "削減",
+      "count": 11,
+      "apps": 8
+    },
+    {
+      "keyword": "ファイル",
+      "count": 19,
+      "apps": 7
+    },
+    {
+      "keyword": "削除",
+      "count": 19,
+      "apps": 7
+    },
+    {
+      "keyword": "共有",
+      "count": 14,
+      "apps": 7
+    },
+    {
+      "keyword": "sns",
+      "count": 12,
+      "apps": 7
+    },
+    {
+      "keyword": "ストレージ",
+      "count": 11,
+      "apps": 7
+    },
+    {
+      "keyword": "位置情報",
+      "count": 10,
+      "apps": 7
+    },
+    {
+      "keyword": "jpeg",
+      "count": 9,
+      "apps": 7
+    },
+    {
+      "keyword": "アップロード",
+      "count": 14,
+      "apps": 6
+    },
+    {
+      "keyword": "画像圧縮",
+      "count": 12,
+      "apps": 6
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "platform": "play",
+  "fields": [
+    {
+      "field": "title",
+      "text": "PicBatch - 写真・画像を一括リサイズ＆形式変換",
+      "length": 28,
+      "limit": 30,
+      "remaining": 2,
+      "ok": true
+    },
+    {
+      "field": "short",
+      "text": "複数の写真・画像をまとめてリサイズ＆形式変換。容量を減らしてメール添付やSNS投稿に。端末内で処理し、データは収集しません。",
+      "length": 62,
+      "limit": 80,
+      "remaining": 18,
+      "ok": true
+    }
+  ],
+  "warnings": [],
+  "ok": true
+}

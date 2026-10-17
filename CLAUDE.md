@@ -9,6 +9,8 @@ Two independent pieces that share one concept (store character limits counted in
 1. **Landing page** for "Japan Launch Pack", a fixed-price Japanese App Store / Google Play listing service. It's a static single page (`index.html` + `assets/`) for GitHub Pages: no build step, no frameworks, no trackers, system fonts. `.nojekyll` makes Pages serve files as-is.
 2. **Research CLI** `scripts/jp_competitors.py`: Japan-store competitor search, keyword extraction, and metadata limit checks. Python 3 stdlib only. `google-play-scraper` is optional and only used by the `play` subcommand.
 
+`case-study-picbatch.html` is a static case study (the founder's own pre-launch app PicBatch, not a client) linked from the index nav, the `#sample-analysis` section and the footer. Its tables and counts were transcribed from the JSON in `case-study/data/` (search results from 2026-10-17 plus `check` output); if a draft changes, re-run `check` and update both the JSON and the page. The draft tables reuse `.sample-table` + `[data-count-text]`, so `app.js` recomputes their badges. Only claim features the brief lists (batch select, resize, format conversion, save location, on-device, no data collection); no format names until the supported list is confirmed.
+
 `TASK.md` is the original spec. Check it before changing copy or features.
 
 ## Commands

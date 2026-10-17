@@ -3,6 +3,7 @@
 A static, single-page site for Japan Launch Pack, a fixed-price service that writes Japanese App Store and Google Play listings for indie apps. The repo also includes a small research script for looking at Japanese competitors and checking store character limits.
 
 - `index.html`, `assets/`: the landing page (GitHub Pages ready, no build step, no frameworks, no trackers)
+- `case-study-picbatch.html`: sample analysis run on the founder's own pre-launch Android app, PicBatch. Raw search results and `check` output it was built from are in `case-study/data/`
 - `scripts/jp_competitors.py`: competitor search, keyword extraction and character-limit checks
 - `tests/test_limits.py`: offline unit tests for the checker and keyword extractor
 

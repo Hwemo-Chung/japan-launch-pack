@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample analysis: PicBatch Japanese store listing | Japan Launch Pack</title>
+  <meta name="description" content="A worked example of the Japan Launch Pack process on the founder's own pre-launch Android app: competitor research on Google Play Japan, keyword choices and Japanese metadata drafts checked against store limits.">
+  <meta name="theme-color" content="#b42318">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Sample analysis: PicBatch | Japan Launch Pack">
+  <meta property="og:description" content="Competitor research, keyword choices and Japanese store metadata drafts for a pre-launch Android app, with every field checked against store limits.">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sample analysis: PicBatch | Japan Launch Pack">
+  <meta name="twitter:description" content="Competitor research, keyword choices and Japanese store metadata drafts for a pre-launch Android app.">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Japan Launch Pack</a>
+      <nav aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html#deliverables">What you get</a></li>
+          <li><a href="case-study-picbatch.html" aria-current="page">Sample analysis</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a class="btn btn-small" href="index.html#apply">Apply</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Intro -->
+    <section class="hero hero-compact" aria-labelledby="cs-title">
+      <div class="container narrow">
+        <p class="eyebrow">Sample analysis &middot; Google Play Japan</p>
+        <h1 id="cs-title">PicBatch: a Japanese store listing, from competitor research to final drafts</h1>
+        <div class="notice" role="note">
+          <p><strong>This is my own app, not a client. It is pre-launch, so there are no ranking results to show. This page shows the process and deliverables.</strong></p>
+        </div>
+        <p>PicBatch is an Android app (Kotlin, package <code>com.picbatch.app</code>) for on-device batch photo processing: select many photos, resize them, convert their format and choose where to save the results. It collects no data. It is currently in closed testing and not yet on Google Play.</p>
+        <p class="small">The drafts below were written by a Tokyo-based engineer using AI-assisted research, then reviewed by hand. I'm not a native Japanese speaker. Each Japanese draft has an English gloss next to it so you can see what it says.</p>
+      </div>
+    </section>
+
+    <!-- Method -->
+    <section class="section section-alt" aria-labelledby="method-title">
+      <div class="container narrow">
+        <h2 id="method-title">How the research was done</h2>
+        <ol class="plain-list">
+          <li>Picked three searches a Japanese user would type to find an app like this: <span lang="ja">画像 一括 リサイズ</span> (batch image resize), <span lang="ja">写真 圧縮</span> (photo compression) and <span lang="ja">画像 変換</span> (image conversion).</li>
+          <li>Ran each search on Google Play Japan (<code>lang=ja</code>, <code>country=jp</code>, up to 15 results) with <code>scripts/jp_competitors.py play</code>, and ran the first search once on the Japan App Store with <code>scripts/jp_competitors.py ios</code> for comparison.</li>
+          <li>Extracted the most frequent keywords across the competitors' titles and descriptions, counted by how many apps use each one.</li>
+          <li>Chose a keyword set, wrote the drafts and checked every length-limited field with <code>scripts/jp_competitors.py check</code>.</li>
+        </ol>
+        <p class="small">Data collected on 2026-10-17. Search results change over time. The raw JSON output is in <code>case-study/data/</code> in this site's repository.</p>
+      </div>
+    </section>
+
+    <!-- Competitors -->
+    <section class="section" id="competitors" aria-labelledby="competitors-title">
+      <div class="container">
+        <h2 id="competitors-title">Competitors on Google Play Japan</h2>
+        <p class="section-lead">The 10 highest-placed unique apps across the two searches closest to what PicBatch does. The rank columns show where each app appeared in each search (&ndash; means it wasn't in that search's results).</p>
+        <figure class="sample">
+          <figcaption class="sample-label">Google Play Japan &middot; searches <span lang="ja">画像 一括 リサイズ</span> (11 results) and <span lang="ja">写真 圧縮</span> (15 results)</figcaption>
+          <table class="sample-table data-table">
+            <thead>
+              <tr><th scope="col">App title</th><th scope="col">Developer</th><th scope="col">Rating</th><th scope="col">Title length</th><th scope="col">Rank: <span lang="ja">画像 一括 リサイズ</span></th><th scope="col">Rank: <span lang="ja">写真 圧縮</span></th></tr>
+            </thead>
+            <tbody>
+              <tr><td lang="ja">写真リサイズ</td><td>Farluner Apps &amp; Games</td><td>4.4</td><td>6</td><td>1</td><td>1</td></tr>
+              <tr><td lang="ja">写真リサイズ - 画像サイズ変更・縮小</td><td>Ryoichi Fukugawa</td><td>4.56</td><td>19</td><td>2</td><td>3</td></tr>
+              <tr><td lang="ja">写真を圧縮する: 写真のサイズを変更する &amp; 写真の切り抜き</td><td>Wang YuFen</td><td>4.65</td><td>30</td><td>5</td><td>2</td></tr>
+              <tr><td lang="ja">画像サイズ - 写真リサイズ アプリ</td><td>Codenia</td><td>4.28</td><td>18</td><td>3</td><td>&ndash;</td></tr>
+              <tr><td>JPEG Image Compressor &amp; Resize</td><td>DictionaryAndTranslator</td><td>4.35</td><td>30</td><td>4</td><td>5</td></tr>
+              <tr><td lang="ja">画像圧縮 写真サイズ縮小 MB→KB</td><td>Double Ape</td><td>4.48</td><td>18</td><td>&ndash;</td><td>4</td></tr>
+              <tr><td lang="ja">Puma（ピューマ）：写真 圧縮・リサイズ・変換</td><td>Farluner Apps &amp; Games</td><td>4.45</td><td>24</td><td>10</td><td>6</td></tr>
+              <tr><td lang="ja">Photo Resizer：画像をトリミング、サイズ変更、共</td><td>photoshop mobile apps</td><td>4.31</td><td>30</td><td>6</td><td>&ndash;</td></tr>
+              <tr><td lang="ja">画像圧縮 | 写真サイズ変更 | 画像サイズ変更</td><td>Battery Stats Saver</td><td>4.09</td><td>24</td><td>7</td><td>15</td></tr>
+              <tr><td lang="ja">LitPhoto - 写真の圧縮と編集</td><td>coolqoo</td><td>4.6</td><td>19</td><td>&ndash;</td><td>7</td></tr>
+            </tbody>
+          </table>
+          <p class="sample-note">Titles are shown as returned by the search. Title length is counted in characters (Unicode code points); the Google Play limit is 30.</p>
+        </figure>
+
+        <h3 class="subhead">What stands out</h3>
+        <ul class="plain-list">
+          <li><strong>Almost nobody says "batch" in the title.</strong> Only 1 of the 11 titles for <span lang="ja">画像 一括 リサイズ</span> contains <span lang="ja">一括</span> (batch), and none of the 15 for <span lang="ja">写真 圧縮</span> do. On the Japan App Store, 7 of 14 titles for the same search include it. Batch processing is PicBatch's main feature, so it goes in the title.</li>
+          <li><strong>English-only titles still show up.</strong> 2 of 11 results for the resize search and 4 of 15 for the compression search have titles with no Japanese at all. A clear Japanese title is a reasonable way to stand out among them.</li>
+          <li><strong><span lang="ja">画像 変換</span> means something else.</strong> In that search, 5 of 15 titles mention PDF and the top results are mostly PDF and JPG converters. Users typing it often want "photo to PDF", which PicBatch doesn't do, so the drafts say <span lang="ja">形式変換</span> (format conversion) rather than chasing the broad term.</li>
+          <li><strong>Titles use most of the limit.</strong> Average title length is 22 characters for the resize search. Several competitors are at exactly 30, and one title (<span lang="ja">&hellip;サイズ変更、共</span>) appears to be cut off mid-word, which looks careless in search results.</li>
+        </ul>
+
+        <details class="ios-compare">
+          <summary>For comparison: Japan App Store, search <span lang="ja">画像 一括 リサイズ</span> (top 10 of 14)</summary>
+          <div class="table-scroll">
+            <table class="sample-table data-table">
+              <thead>
+                <tr><th scope="col">App name</th><th scope="col">Developer</th><th scope="col">Rating</th><th scope="col">Ratings</th><th scope="col">Title length</th></tr>
+              </thead>
+              <tbody>
+                <tr><td lang="ja">リサイズメール-複数の写真/画像をまとめて 一括変換</td><td>Sho Kurozumi</td><td>4.48</td><td>1,937</td><td>26</td></tr>
+                <tr><td lang="ja">ResizeToS - 画像一括リサイズ</td><td>jinkyun kim</td><td>&ndash;</td><td>0</td><td>20</td></tr>
+                <tr><td lang="ja">かんたん写真圧縮 - 画像リサイズ・サイズ変更で容量削減</td><td>Osawa Shunsuke</td><td>4.45</td><td>3,282</td><td>28</td></tr>
+                <tr><td lang="ja">画像圧縮・動画圧縮・写真圧縮で空き容量を増やすリサイズ圧縮</td><td>Saigen inc.</td><td>4.45</td><td>2,998</td><td>29</td></tr>
+                <tr><td lang="ja">画像変換：一括リサイズとPDF作成</td><td>Yanchen Zhao</td><td>4.75</td><td>4</td><td>17</td></tr>
+                <tr><td lang="ja">PicGizmo - リサイズ &amp; HEICからJPG変換</td><td>REAFO CO., LTD.</td><td>4.23</td><td>444</td><td>29</td></tr>
+                <tr><td lang="ja">かんたん動画圧縮 - リサイズやファイル形式の変換</td><td>Osawa Shunsuke</td><td>4.66</td><td>15,957</td><td>25</td></tr>
+                <tr><td lang="ja">画像まとめてリサイズ〜カメラロールの画像を一括編集〜</td><td>Hiroyuki Kawate</td><td>3</td><td>6</td><td>26</td></tr>
+                <tr><td lang="ja">画像圧縮 - KB指定・写真サイズ変更</td><td>明娜 乔</td><td>4.54</td><td>63</td><td>19</td></tr>
+                <tr><td lang="ja">写真リサイズ - 画像圧縮・画像サイズ変更・容量削減アプリ</td><td>Yu Abe</td><td>4.6</td><td>758</td><td>29</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="small">Google Play's search results don't include rating counts, so that column only appears for the App Store.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Keyword frequency -->
+    <section class="section section-alt" id="keywords" aria-labelledby="keywords-title">
+      <div class="container">
+        <h2 id="keywords-title">Keyword frequency</h2>
+        <p class="section-lead">How many competing apps use each word in their title or description, per search. A selection of the extracted keywords is shown; &ndash; means the word wasn't in that search's top 30.</p>
+        <figure class="sample">
+          <figcaption class="sample-label">Apps using each keyword &middot; Google Play Japan (3 searches) and Japan App Store (1 search)</figcaption>
+          <table class="sample-table data-table">
+            <thead>
+              <tr><th scope="col">Keyword</th><th scope="col">Play: <span lang="ja">画像 一括 リサイズ</span> (of 11)</th><th scope="col">Play: <span lang="ja">写真 圧縮</span> (of 15)</th><th scope="col">Play: <span lang="ja">画像 変換</span> (of 15)</th><th scope="col">iOS: <span lang="ja">画像 一括 リサイズ</span> (of 14)</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row" lang="ja">写真</th><td>9</td><td>12</td><td>11</td><td>13</td></tr>
+              <tr><th scope="row" lang="ja">画像</th><td>9</td><td>11</td><td>13</td><td>13</td></tr>
+              <tr><th scope="row" lang="ja">サイズ</th><td>9</td><td>12</td><td>6</td><td>13</td></tr>
+              <tr><th scope="row" lang="ja">変更</th><td>8</td><td>9</td><td>9</td><td>9</td></tr>
+              <tr><th scope="row" lang="ja">保存</th><td>8</td><td>10</td><td>9</td><td>11</td></tr>
+              <tr><th scope="row" lang="ja">圧縮</th><td>7</td><td>12</td><td>&ndash;</td><td>10</td></tr>
+              <tr><th scope="row" lang="ja">縮小</th><td>8</td><td>10</td><td>&ndash;</td><td>&ndash;</td></tr>
+              <tr><th scope="row" lang="ja">リサイズ</th><td>7</td><td>6</td><td>&ndash;</td><td>13</td></tr>
+              <tr><th scope="row" lang="ja">複数</th><td>7</td><td>10</td><td>&ndash;</td><td>9</td></tr>
+              <tr><th scope="row" lang="ja">一括</th><td>&ndash;</td><td>7</td><td>&ndash;</td><td>11</td></tr>
+              <tr><th scope="row" lang="ja">容量</th><td>&ndash;</td><td>&ndash;</td><td>&ndash;</td><td>10</td></tr>
+              <tr><th scope="row" lang="ja">変換</th><td>5</td><td>&ndash;</td><td>12</td><td>8</td></tr>
+              <tr><th scope="row" lang="ja">形式</th><td>7</td><td>&ndash;</td><td>7</td><td>9</td></tr>
+              <tr><th scope="row" lang="ja">解像度</th><td>6</td><td>9</td><td>&ndash;</td><td>&ndash;</td></tr>
+              <tr><th scope="row" lang="ja">画質</th><td>&ndash;</td><td>8</td><td>7</td><td>8</td></tr>
+              <tr><th scope="row">kb</th><td>8</td><td>11</td><td>&ndash;</td><td>&ndash;</td></tr>
+              <tr><th scope="row">png</th><td>8</td><td>12</td><td>12</td><td>10</td></tr>
+              <tr><th scope="row">jpeg</th><td>8</td><td>11</td><td>9</td><td>7</td></tr>
+              <tr><th scope="row">webp</th><td>6</td><td>8</td><td>8</td><td>&ndash;</td></tr>
+              <tr><th scope="row" lang="ja">メール</th><td>6</td><td>8</td><td>7</td><td>8</td></tr>
+              <tr><th scope="row" lang="ja">共有</th><td>7</td><td>9</td><td>11</td><td>7</td></tr>
+              <tr><th scope="row">pdf</th><td>&ndash;</td><td>&ndash;</td><td>10</td><td>&ndash;</td></tr>
+            </tbody>
+          </table>
+          <p class="sample-note">Glosses: <span lang="ja">写真</span> photo, <span lang="ja">画像</span> image, <span lang="ja">サイズ</span> size, <span lang="ja">変更</span> change, <span lang="ja">保存</span> save, <span lang="ja">圧縮</span> compress, <span lang="ja">縮小</span> shrink, <span lang="ja">リサイズ</span> resize, <span lang="ja">複数</span> multiple, <span lang="ja">一括</span> batch / all at once, <span lang="ja">容量</span> storage space / file size, <span lang="ja">変換</span> convert, <span lang="ja">形式</span> format, <span lang="ja">解像度</span> resolution, <span lang="ja">画質</span> image quality, <span lang="ja">メール</span> email, <span lang="ja">共有</span> share. Extraction is a frequency heuristic, not a morphological analyser, so the list was reviewed by hand.</p>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Keyword set -->
+    <section class="section" id="keyword-set" aria-labelledby="keyword-set-title">
+      <div class="container">
+        <h2 id="keyword-set-title">Chosen keyword set</h2>
+        <p class="section-lead">Each keyword has to match both what people search for and what the app really does. Words for features PicBatch doesn't have were left out, even when competitors use them a lot.</p>
+        <div class="table-scroll">
+          <table class="sample-table data-table">
+            <thead>
+              <tr><th scope="col">Keyword</th><th scope="col">Meaning</th><th scope="col">Search intent</th><th scope="col">Why it's in</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row" lang="ja">一括 / まとめて / 複数</th><td>batch / all together / multiple</td><td>"I have a lot of photos and don't want to do them one by one."</td><td>The core feature. <span lang="ja">一括</span> is rare in Play titles (1 of 11 and 0 of 15), so it differentiates. <span lang="ja">まとめて</span> and <span lang="ja">複数</span> are the everyday ways to say it.</td></tr>
+              <tr><th scope="row" lang="ja">写真 / 画像</th><td>photo / image</td><td>Both words are used for the same thing.</td><td>The top words in every search. Users type either one, so the title carries both.</td></tr>
+              <tr><th scope="row" lang="ja">リサイズ / サイズ変更</th><td>resize / change size</td><td>"Make this picture smaller in pixels."</td><td><span lang="ja">リサイズ</span> is in 13 of 14 iOS titles and 5 of 11 Play titles. <span lang="ja">サイズ変更</span> is the plain Japanese phrasing for users who don't use the loanword.</td></tr>
+              <tr><th scope="row" lang="ja">縮小 / 容量</th><td>shrink / file size, storage</td><td>"The file is too big to send or store."</td><td>Used by 8&ndash;10 apps in the resize and compression searches. Resizing reduces file size, so these describe a real result of using the app.</td></tr>
+              <tr><th scope="row" lang="ja">圧縮</th><td>compress</td><td>Same goal as above: smaller files.</td><td>Very common (12 of 15 apps for <span lang="ja">写真 圧縮</span>). Used in the iOS keyword field and in the description only in the sense of "making files smaller by resizing", not as a claim about compression settings.</td></tr>
+              <tr><th scope="row" lang="ja">形式変換</th><td>format conversion</td><td>"Change this image to another file type."</td><td>A real feature. Phrased as <span lang="ja">形式変換</span> instead of the broad <span lang="ja">画像 変換</span>, whose results are dominated by PDF converters.</td></tr>
+              <tr><th scope="row" lang="ja">保存先</th><td>save location</td><td>"Where do the processed files go?"</td><td>A real feature that many competitors don't mention in their titles. <span lang="ja">保存</span> appears in 8&ndash;11 apps per search.</td></tr>
+              <tr><th scope="row" lang="ja">端末内で処理 / データ収集なし</th><td>processed on the device / no data collected</td><td>Not a search term. It answers "is it safe to put my photos in this?"</td><td>Used in the short description and a screenshot caption to help a user decide after they find the app.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3 class="subhead">Left out on purpose</h3>
+        <ul class="plain-list">
+          <li><strong>pdf</strong>: high frequency in the conversion search, but PicBatch doesn't make PDFs.</li>
+          <li><strong>png, jpeg, webp, heic</strong>: very common, but format names should only appear for formats the app supports. They go into the full description once the supported list is final.</li>
+          <li><strong><span lang="ja">トリミング</span> (crop), AI, <span lang="ja">編集</span> (edit)</strong>: not features of this app.</li>
+          <li><strong><span lang="ja">無料</span> (free), <span lang="ja">簡単</span> (easy)</strong>: Google Play's metadata policy doesn't allow price or promotional wording in the title, and "easy" says nothing specific.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Play drafts -->
+    <section class="section section-alt" id="play-drafts" aria-labelledby="play-drafts-title">
+      <div class="container">
+        <h2 id="play-drafts-title">Google Play drafts</h2>
+        <p class="section-lead">Lengths come from <code>jp_competitors.py check --platform play</code>. Both fields are within the limit and the checker reported no warnings.</p>
+        <figure class="sample">
+          <figcaption class="sample-label">Draft &middot; Google Play &middot; PicBatch</figcaption>
+          <table class="sample-table">
+            <thead>
+              <tr><th scope="col">Field</th><th scope="col">Japanese text</th><th scope="col">English gloss</th><th scope="col">Length / limit</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Title</th>
+                <td lang="ja" data-count-text>PicBatch - 写真・画像を一括リサイズ＆形式変換</td>
+                <td class="gloss">PicBatch: batch-resize and convert the format of photos and images</td>
+                <td><span class="count" data-limit="30">28 / 30</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Short description</th>
+                <td lang="ja" data-count-text>複数の写真・画像をまとめてリサイズ＆形式変換。容量を減らしてメール添付やSNS投稿に。端末内で処理し、データは収集しません。</td>
+                <td class="gloss">Resize and convert many photos and images at once. Make files smaller for email attachments or social media posts. Processed on your device; no data is collected.</td>
+                <td><span class="count" data-limit="80">62 / 80</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
+
+        <h3 class="subhead">Full description (opening lines)</h3>
+        <div class="draft-pair">
+          <div class="draft-ja" lang="ja">PicBatchは、たくさんの写真や画像をまとめて処理するアプリです。
+複数の写真を選んで、リサイズ（サイズ変更）や形式変換を一括で行えます。保存先も自分で選べます。
+処理はすべて端末内で行います。写真をサーバーにアップロードすることはなく、データも収集しません。
+
+【主な機能】
+・複数の写真・画像を選んで一括リサイズ
+・画像の形式をまとめて変換
+・保存先フォルダを選択</div>
+          <div class="gloss">
+            <p>PicBatch is an app for processing lots of photos and images at once.</p>
+            <p>Select multiple photos and resize them (change their size) or convert their format in one go. You can also choose where to save them.</p>
+            <p>All processing happens on your device. Photos are never uploaded to a server, and no data is collected.</p>
+            <p>Main features: batch-resize multiple photos and images; convert image formats in bulk; choose the save folder.</p>
+          </div>
+        </div>
+        <p class="small">186 characters (counted with Python <code>len()</code>; the Google Play limit for the full description is 4,000). The first lines matter most because they show before "more". The full version adds the supported formats and step-by-step usage.</p>
+
+        <h3 class="subhead">Screenshot captions</h3>
+        <p>Short, descriptive captions, one feature per screenshot, in the order a user would use the app.</p>
+        <div class="table-scroll">
+          <table class="sample-table data-table">
+            <thead>
+              <tr><th scope="col">#</th><th scope="col">Caption</th><th scope="col">English gloss</th><th scope="col">Length</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td lang="ja">写真をまとめて選択</td><td class="gloss">Select photos all at once</td><td>9</td></tr>
+              <tr><td>2</td><td lang="ja">一括リサイズで容量を節約</td><td class="gloss">Save space with batch resizing</td><td>12</td></tr>
+              <tr><td>3</td><td lang="ja">形式変換もまとめて</td><td class="gloss">Convert formats in bulk, too</td><td>9</td></tr>
+              <tr><td>4</td><td lang="ja">保存先を自由に選べる</td><td class="gloss">Save wherever you like</td><td>10</td></tr>
+              <tr><td>5</td><td lang="ja">端末内で処理、データ収集なし</td><td class="gloss">Processed on your device, no data collected</td><td>14</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small">Captions have no store limit. They're kept to about 15 characters so they stay readable on a phone-sized screenshot.</p>
+      </div>
+    </section>
+
+    <!-- iOS drafts -->
+    <section class="section" id="ios-drafts" aria-labelledby="ios-drafts-title">
+      <div class="container">
+        <h2 id="ios-drafts-title">Hypothetical App Store version</h2>
+        <p class="section-lead"><strong>If the app shipped on iOS.</strong> PicBatch is Android-only; this shows how the same research maps onto the App Store's three fields. Lengths come from <code>jp_competitors.py check --platform ios</code>, which reported no warnings.</p>
+        <figure class="sample">
+          <figcaption class="sample-label">Hypothetical &middot; App Store (iOS) &middot; if the app shipped on iOS</figcaption>
+          <table class="sample-table">
+            <thead>
+              <tr><th scope="col">Field</th><th scope="col">Japanese text</th><th scope="col">English gloss</th><th scope="col">Length / limit</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">App name</th>
+                <td lang="ja" data-count-text>PicBatch - 写真・画像を一括リサイズ</td>
+                <td class="gloss">PicBatch: batch-resize photos and images</td>
+                <td><span class="count" data-limit="30">23 / 30</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Subtitle</th>
+                <td lang="ja" data-count-text>まとめてサイズ変更・形式変換で容量節約</td>
+                <td class="gloss">Save space by resizing and converting formats all at once</td>
+                <td><span class="count" data-limit="30">19 / 30</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Keywords</th>
+                <td lang="ja" class="kw" data-count-text>圧縮,縮小,複数,保存先,画質,解像度,軽量化,メール,添付,SNS,アップロード,ストレージ,カメラロール,ピクセル,枚数,KB,MB,ファイル,一斉,小さく,空き</td>
+                <td class="gloss">compress, shrink, multiple, save location, image quality, resolution, make lighter, email, attachment, SNS, upload, storage, camera roll, pixel, number of photos, KB, MB, file, all at once, smaller, free space</td>
+                <td><span class="count" data-limit="100">83 / 100</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="sample-note">The keyword field repeats no word from the name or subtitle, because the App Store already indexes those. It uses commas with no spaces, since spaces would waste characters. The remaining 17 characters are held for format names once the supported list is confirmed.</p>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Deliverable summary -->
+    <section class="section section-alt" aria-labelledby="deliverable-title">
+      <div class="container narrow">
+        <h2 id="deliverable-title">What a client would receive</h2>
+        <p>The same material as on this page, for your app and the stores you choose: the competitor table, keyword research with a reason for each choice, drafts for every field checked against the store limits, and screenshot captions. Delivered as a PDF report plus fastlane-ready metadata files.</p>
+        <p class="small">No ranking or download results are claimed here or promised for client work. How the stores rank an app is outside anyone's control.</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section-cta" aria-labelledby="cta-title">
+      <div class="container narrow center">
+        <h2 id="cta-title">Want this for your app?</h2>
+        <p>Founding slots are limited to the first 5 apps.</p>
+        <a class="btn" href="index.html#apply">Apply for a founding slot</a>
+        <p class="small">Apply now, pay later. No payment is collected on this page.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Japan Launch Pack</strong> &middot; Japanese store listings by a Tokyo-based app engineer. <a href="index.html">Home</a> &middot; <a href="case-study-picbatch.html">Sample analysis</a></p>
+      <p>Contact: via the <a href="index.html#apply">application form</a> only.</p>
+      <p>This site uses no cookies, analytics or trackers.</p>
+      <p>App Store is a service mark of Apple Inc. Google Play is a trademark of Google LLC. This service is not affiliated with either. App names in the tables belong to their developers.</p>
+    </div>
+  </footer>
+</body>
+</html>
